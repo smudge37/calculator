@@ -37,30 +37,24 @@ function getOp(){
 }
 function operate(op,nums){
 	numCount = nums.length
+	out = nums[0];
 	switch(op){
 		case "/":
-			out = nums[0];
 			for (i=1; i < numCount; i++){
 				out = out/nums[i];
 			}
 			break;
-		
 		case "*":
-			out = 1;
 			for (i=0; i < numCount; i++){
 				out = out*num[i];
 			}
 			break;
-		
 		case "-":
-			out = nums[0];
 			for (i=1; i < numCount; i++){
 				out -= nums[i];
 			}
 			break;
-		
 		default:
-			out = 0;
 			for (i=0; i < numCount; i++){
 				out += nums[i];
 			}
